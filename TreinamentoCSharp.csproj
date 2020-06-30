@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15AF802C-3146-440B-BEC2-ECEE9C623785}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TreinamentoCSharp</RootNamespace>
+    <AssemblyName>TreinamentoCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apresentação\FormEmpresaRecebimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\FormEmpresaRecebimento.Designer.cs">
+      <DependentUpon>FormEmpresaRecebimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\Form_AcessoPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\Form_AcessoPrincipal.Designer.cs">
+      <DependentUpon>Form_AcessoPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\Form_Cad_Cli_CPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\Form_Cad_Cli_CPF.Designer.cs">
+      <DependentUpon>Form_Cad_Cli_CPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\Form_Carregando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\Form_Carregando.Designer.cs">
+      <DependentUpon>Form_Carregando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\Form_TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\Form_TelaLogin.Designer.cs">
+      <DependentUpon>Form_TelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\Form_CriarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\Form_CriarUsuario.Designer.cs">
+      <DependentUpon>Form_CriarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\Form_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\Form_Usuario.Designer.cs">
+      <DependentUpon>Form_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="DAL\LoginDaoComandos.cs" />
+    <Compile Include="DBJSDSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBJSDSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\FormControleFinaceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\FormControleFinaceiro.Designer.cs">
+      <DependentUpon>FormControleFinaceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Controle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Apresentação\FormEmpresaRecebimento.resx">
+      <DependentUpon>FormEmpresaRecebimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\Form_AcessoPrincipal.resx">
+      <DependentUpon>Form_AcessoPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\Form_Cad_Cli_CPF.resx">
+      <DependentUpon>Form_Cad_Cli_CPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\Form_Carregando.resx">
+      <DependentUpon>Form_Carregando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\Form_TelaLogin.resx">
+      <DependentUpon>Form_TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\Form_CriarUsuario.resx">
+      <DependentUpon>Form_CriarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\FormControleFinaceiro.resx">
+      <DependentUpon>FormControleFinaceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\Form_Usuario.resx">
+      <DependentUpon>Form_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DBJSDSDataSet.xsc">
+      <DependentUpon>DBJSDSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBJSDSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBJSDSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBJSDSDataSet.xss">
+      <DependentUpon>DBJSDSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_Close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_Minimized.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Fundo_tela_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_Clean.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_Max.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\icons8-fechar-janela-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_Voltar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_Close2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_Restart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_User0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_search_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_PlanInvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\LogoJSDS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_HideMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_HideMenuR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_SearchUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_SearchUser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_PlanInvert2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Icon_Plan2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
